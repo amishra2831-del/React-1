@@ -13,12 +13,17 @@ let [counter, setCounter] =  useState(15)
     // console.log("value added", Math.random );
     console.log("clicked : ", counter) 
     //counter = counter+1;
+    if(counter<20){
    setCounter(counter+1)
+    }
+
     
   }
 
   const removevalue = () =>{
+    if(counter>0){
     setCounter(counter-1)
+    }
   }
 
   return (
