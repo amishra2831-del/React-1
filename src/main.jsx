@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+<<<<<<< HEAD
 import './index.css'
 //import App from './App.jsx'
 import{ createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
@@ -49,5 +50,12 @@ const router = createBrowserRouter(createRoutesFromElements(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router = {router}/>
+=======
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+>>>>>>> 9dd5bde (Add React Context API project)
   </StrictMode>,
 )
